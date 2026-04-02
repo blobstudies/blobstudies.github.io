@@ -81,23 +81,23 @@
     </style>
 </head>
 
-<body class="bg-slate-900 text-slate-300 antialiased overflow-x-hidden relative">
+<body class="bg-slate-950 text-slate-300 antialiased overflow-x-hidden relative">
 
     <div class="fixed inset-0 w-full h-full overflow-hidden pointer-events-none z-[-1]">
 
-        <div class="blob-shape top-[5%] left-[5%] w-96 h-96 opacity-40 blur-2xl mix-blend-screen"
-            style="animation: float1 28s ease-in-out infinite; background: linear-gradient(135deg, #a5b4fc 0%, #6366f1 100%);">
+        <div class="blob-shape top-[5%] left-[5%] w-96 h-96 opacity-20 blur-2xl mix-blend-screen"
+            style="animation: float1 18s ease-in-out infinite; background: linear-gradient(135deg, #a5b4fc 0%, #6366f1 100%);">
         </div>
 
-        <div class="blob-shape top-[30%] right-[10%] w-[25rem] h-[25rem] opacity-30 blur-2xl mix-blend-screen"
-            style="animation: float2 34s ease-in-out infinite; background: linear-gradient(135deg, #fbcfe8 0%, #ec4899 100%);">
+        <div class="blob-shape top-[30%] right-[10%] w-[25rem] h-[25rem] opacity-20 blur-2xl mix-blend-screen"
+            style="animation: float2 24s ease-in-out infinite; background: linear-gradient(135deg, #fbcfe8 0%, #ec4899 100%);">
         </div>
 
-        <div class="blob-shape bottom-[10%] left-[25%] w-[30rem] h-[30rem] opacity-30 blur-2xl mix-blend-screen"
-            style="animation: float1 25s ease-in-out infinite; background: linear-gradient(135deg, #93c5fd 0%, #3b82f6 100%);">
+        <div class="blob-shape bottom-[10%] left-[25%] w-[30rem] h-[30rem] opacity-20 blur-2xl mix-blend-screen"
+            style="animation: float1 15s ease-in-out infinite; background: linear-gradient(135deg, #93c5fd 0%, #3b82f6 100%);">
         </div>
 
-        <div class="blob-shape bottom-[15%] right-[15%] w-80 h-80 opacity-30 blur-2xl mix-blend-screen"
+        <div class="blob-shape bottom-[15%] right-[15%] w-80 h-80 opacity-20 blur-2xl mix-blend-screen"
             style="animation: float2 22s ease-in-out infinite; background: linear-gradient(135deg, #c4b5fd 0%, #8b5cf6 100%);">
         </div>
 
@@ -109,9 +109,11 @@
             Blob Studies
         </a>
         <div class="space-x-6 font-semibold">
-            <a href="https://blobstudies.substack.com" class="hover:text-blob transition-colors">Lessons</a>
+            <a href="https://blobstudies.substack.com" target="_blank" rel="noopener noreferrer"
+                class="hover:text-blob transition-colors">Lessons</a>
             <a href="#" class="hover:text-blob transition-colors">Wiki (Coming Soon)</a>
-            <a href="https://www.youtube.com/@MikeBenzCyberOfficial" class="hover:text-blob transition-colors">Mike
+            <a href="https://www.youtube.com/@MikeBenzCyberOfficial" target="_blank" rel="noopener noreferrer"
+                class="hover:text-blob transition-colors">Mike
                 Benz</a>
         </div>
     </nav>
@@ -128,12 +130,13 @@
                 </p>
             </div>
             <a href="https://blobstudies.substack.com/p/cbs-101-lesson-2-which-side-is-the" target="_blank"
+                rel="noopener noreferrer"
                 class="text-sm font-bold text-white bg-white/10 hover:bg-blob px-5 py-2 rounded-full transition-colors whitespace-nowrap">
                 Start Learning &rarr;
             </a>
         </div>
     </div>
-    <header class="container mx-auto px-6 pt-20 pb-8 text-center relative z-10">
+    <header class="container mx-auto px-6 pt-10 pb-8 text-center relative z-10">
         <div class="max-w-3xl mx-auto">
             <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white leading-tight">
                 Demystifying the <span
@@ -145,19 +148,46 @@
                 Benz's Blob framework.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://blobstudies.substack.com/p/cbs101-lesson-1-what-is-the-blob"
+                <a href="https://blobstudies.substack.com/p/cbs101-lesson-1-what-is-the-blob" target="_blank"
+                    rel="noopener noreferrer"
                     class="px-8 py-4 bg-blob hover:bg-blob-dark text-white rounded-full font-semibold transition-transform transform hover:-translate-y-1 shadow-lg shadow-blob/30">
                     Start Learning
                 </a>
-                <a href="#" target="_blank"
+                <!-- <a href="#" target="_blank"
                     class="px-8 py-4 bg-white border-2 border-slate-200 hover:border-blob text-slate-700 rounded-full font-semibold transition-all shadow-sm">
-                    Read the Wiki (Coming Soon)
+                    View the Wiki
+                </a> -->
+                <a href="" target=""
+                    class="px-8 py-4 bg-white border-25 border-slate-200 text-slate-700 rounded-full font-semibold transition-all shadow-sm">
+                    Coming Soon
                 </a>
             </div>
         </div>
     </header>
 
-    <section id="explore" class="container mx-auto px-6 pt-8 pb-20 relative z-10">
+    <section class="container mx-auto px-6 pb-24 relative z-10">
+        <div
+            class="max-w-3xl mx-auto bg-white/50 backdrop-blur-md border border-white/10 p-4 rounded-3xl shadow-2xl shadow-black/10">
+
+            <div class="text-center mb-3">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-blob text-white text-xs font-bold tracking-wider uppercase shadow-sm">
+                    Featured
+                </span>
+            </div>
+
+            <div class="w-full aspect-video rounded-2xl overflow-hidden shadow-xl bg-slate-900">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/JJY3k8Njaf8"
+                    title="Mike Benz Endorses Blob Studies" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <section id="explore" class="container mx-auto px-6 pt-8 pb-20 relative z-10">
         <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
             <a href="#" target="_blank"
@@ -210,9 +240,9 @@
             </a>
 
         </div>
-    </section>
+    </section> -->
 
-    <footer class="bg-slate-950 text-slate-400 py-10 text-center">
+    <footer class="bg-slate-150 text-slate-400 py-10 text-center">
         <p class="mb-2">© 2026 Blob Studies. All rights reserved.</p>
     </footer>
 
